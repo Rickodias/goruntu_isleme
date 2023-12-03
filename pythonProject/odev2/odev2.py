@@ -15,6 +15,6 @@ red_mask = cv2.inRange(hsv, lower_red, upper_red)
 red_result = cv2.bitwise_and(image, image, mask=red_mask)
 
 cv2.imshow("Red Object Detection", red_result)
-cv2.waitKey(0)  # Herhangi bir tuşa basana kadar pencereyi açık tutun
+cv2.waitKey(0)
 
 cv2.destroyAllWindows()
